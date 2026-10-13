@@ -1,0 +1,22 @@
+# cent-listing-arb-spread
+
+> Listing-day trade data for $CENT (Incentiv) on MEXC and Gate, 2026-10-12 17:00 to 23:00 UTC+8. MEXC traded at up to 3.09 times Gate's price. Gate took deposits as ERC-20 on Ethereum, MEXC on the native Incentiv chain.
+
+## Docs
+
+- [README](README.md): trade data, deposit chains, how to rebuild
+- [AGENTS.md](AGENTS.md): pipeline, constants, exchange API quirks
+
+## Code
+
+- [fetch_trades.py](fetch_trades.py): downloads all trades from MEXC and Gate public APIs and checks them against kline volume
+- [build_chart.py](build_chart.py): builds 1-minute candles from trades and writes index.html
+- [chart_template.html](chart_template.html): chart page with EN, zh-TW and zh-CN text
+
+## Live
+
+- https://yyu0310.github.io/cent-listing-arb-spread/
+
+## License
+
+MIT
